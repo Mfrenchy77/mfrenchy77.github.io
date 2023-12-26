@@ -20,7 +20,7 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A Site to Record Riders and Horses's progress. Allows you to let trainers and
-  others to update your progress or your horses. As well, it provides resources
+  others to update your progress of your horses. As well, it provides resources
   to further educaion.">
 
   <!-- iOS meta tags & icons -->
@@ -28,6 +28,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="horseandriderscompanion">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <meta name="google-signin-client_id"
+    content="854658032014-hlrq1mf9jkv4qv0fkj59h7un5cfddnet.apps.googleusercontent.com" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
@@ -37,7 +40,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '722985210';
+    const serviceWorkerVersion = "2146122752";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer=""></script>
@@ -45,11 +48,25 @@
 
 
   <link rel="stylesheet" type="text/css" href="splash/style.css">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="splash/splash.js"></script>
+
+  <!-- Google Adsense Ads -->
+  <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7692240231486800"
+    crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+  <picture id="splash">
+    <source
+      srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x"
+      media="(prefers-color-scheme: light)">
+    <source
+      srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x"
+      media="(prefers-color-scheme: dark)">
+    <img class="center" aria-hidden="true" src="splash/img/light-1x.png" alt="">
+  </picture>
   <script type="module">
     import { } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js";
 
@@ -62,15 +79,7 @@
   <script src="main.dart.js" type="application/javascript"></script>
 
 
-  <picture id="splash">
-    <source
-      srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x"
-      media="(prefers-color-scheme: light)">
-    <source
-      srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x"
-      media="(prefers-color-scheme: dark)">
-    <img class="center" aria-hidden="true" src="splash/img/light-1x.png" alt="">
-  </picture>
+
 
 
 
@@ -88,7 +97,9 @@
       });
     });
   </script>
- 
+
+
+
 
 
 
